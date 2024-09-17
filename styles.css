@@ -1,0 +1,174 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Display the list items in a row */
+    margin-right: 20px; /* Add space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #A594F9; /* Set the text color to the palette color */
+    font-weight: bold; /* Make the font bold */
+    font-size: 1.2rem; /* Set font size */
+}
+
+/* Add hover effect for better user experience */
+nav ul li a:hover {
+    color: #CDC1FF; /* Change color on hover */
+    text-decoration: underline; /* Optionally, underline on hover */
+}
+
+
+/* Section styling */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #A594F9; /* Heading color from the palette */
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #A594F9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Button click animation */
+button:active {
+    transform: scale(0.9);
+}
+
+/* Section background colors */
+#home { background-color: #E5D9F2; }
+#about { background-color: #F5EFFF; }
+#menu { background-color: #CDC1FF; }
+#testimonials { background-color: #A594F9; }
+#gallery { background-color: #E5D9F2; }
+#contact { background-color: #F5EFFF; }
+#blog { background-color: #CDC1FF; }
+
+/* Playful font style */
+h1, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Ensure heading and button are in different lines */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, button {
+    margin-bottom: 20px;
+}
+
+/* Menu gallery styling */
+.menu-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-images {
+    display: flex;
+    overflow-x: auto;
+    width: 60%; /* Adjust the width */
+    margin: 0 20px;
+}
+
+.menu-images img {
+    width: 200px;
+    margin: 0 10px;
+}
+
+/* Testimonials section */
+.testimonial-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.box {
+    width: 250px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Gallery styling */
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    overflow-x: auto;
+    width: 60%; /* Adjust width for proper alignment */
+    margin: 0 20px;
+}
+
+.image-container img {
+    width: 200px;
+    margin: 0 10px;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A594F9;
+    color: white;
+}
