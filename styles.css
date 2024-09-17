@@ -86,7 +86,9 @@ button:active {
 /* Playful font style */
 h1, p {
     font-family: 'Raleway', sans-serif;
+    justify-content: center;
 }
+
 
 
 /* Ensure heading and button are in different lines */
@@ -146,13 +148,13 @@ h1, button {
 .image-container {
     display: flex;
     overflow-x: auto;
-    width: 60%; /* Adjust width for proper alignment */
+    width: 50%; /* Adjust width for proper alignment */
     margin: 0 20px;
 }
 
 .image-container img {
     width: 200px;
-    margin: 0 10px;
+    margin: 10 10px;
 }
 
 /* Contact form styling */
