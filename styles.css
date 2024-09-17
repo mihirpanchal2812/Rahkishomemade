@@ -11,6 +11,12 @@ body {
     overflow-x: hidden;
 }
 
+/* Navigation bar container */
+nav {
+    background-color: #E5D9F2; /* Set background color from the palette */
+    padding: 15px 0; /* Add padding to make the bar thicker */
+    text-align: center; /* Center the navigation items */
+}
 /* Navigation menu styling */
 nav ul {
     list-style-type: none; /* Remove bullet points */
@@ -19,7 +25,7 @@ nav ul {
 
 nav ul li {
     display: inline-block; /* Display the list items in a row */
-    margin-right: 20px; /* Add space between menu items */
+    margin-right: 40px; /* Add space between menu items */
 }
 
 nav ul li a {
@@ -71,7 +77,7 @@ button:active {
 /* Section background colors */
 #home { background-color: #E5D9F2; }
 #about { background-color: #F5EFFF; }
-#menu { background-color: #CDC1FF; }
+#menu { background-color: #E5D9F2; }
 #testimonials { background-color: #A594F9; }
 #gallery { background-color: #E5D9F2; }
 #contact { background-color: #F5EFFF; }
@@ -172,3 +178,39 @@ footer {
     background-color: #A594F9;
     color: white;
 }
+
+/* Prevent horizontal scrolling on mobile */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Ensure all sections fit within the viewport width */
+section {
+    width: 100%; /* Make sure sections don't overflow */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent overflow in navigation */
+}
+
+/* Prevent any images from exceeding the width */
+img {
+    max-width: 100%; /* Ensure images don't exceed the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Fix for scrollable elements like menu and gallery */
+.menu-images, .image-container {
+    overflow-x: auto; /* Allow horizontal scrolling within the container */
+    white-space: nowrap; /* Prevent breaking to the next line */
+}
+
